@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[SYMPTOMS] (
+    [SymptomID]   INT          IDENTITY (1, 1) NOT NULL,
+    [Description] VARCHAR (30) NOT NULL,
+    [VitaminID]   INT          NOT NULL,
+    PRIMARY KEY CLUSTERED ([SymptomID] ASC),
+    CONSTRAINT [FKSMPT] FOREIGN KEY ([VitaminID]) REFERENCES [dbo].[VITAMINS] ([VitaminID])
+);
+
