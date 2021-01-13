@@ -22,21 +22,28 @@ namespace DataLayer
         public Customer FindCustomer(string email, string password)
         {
             SqlDataReader sqlDataReader = DBConnection.GetData("SELECT * FROM CUSTOMERS");
+            Customer customer = new Customer();
 
             while (sqlDataReader.Read())
             {
-                Customer customer = new Customer();
-                customer.email = sqlDataReader.GetString(6);
-                customer.Password = sqlDataReader.GetString(7);
+                Customer c = new Customer();
+                c.CustomerID = sqlDataReader.GetInt32(0);
+                c.Name = sqlDataReader.GetString(1);
+                c.Surname = sqlDataReader.GetString(2);
+                c.Adress = sqlDataReader.GetString(3);
+                c.City = sqlDataReader.GetString(4);
+                c.PhoneNumber = sqlDataReader.GetString(5);
+                c.email = sqlDataReader.GetString(6);
+                c.Password = sqlDataReader.GetString(7);
 
-                if (customer.email == email && customer.Password == password)
+                if (c.email == email && c.Password == password)
                 {
-                    return customer;
+                    customer = c;
                 }
             }
 
             DBConnection.CloseConnection();
-            return null;
+            return customer;
         }
     }
 }
