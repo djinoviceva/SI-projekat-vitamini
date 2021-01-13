@@ -8,6 +8,6 @@ namespace DataLayer
 {
     public class Connection
     {
-        public static string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DataBase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public static string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=VitaminDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
     }
 }
