@@ -17,6 +17,7 @@ namespace BusinessLayer
         {
             this.orderRepository = _orderRepository;
         }
+
         public bool AddNewOrder(Order order)
         {
             if (this.orderRepository.AddNewOrder(order) > 0)

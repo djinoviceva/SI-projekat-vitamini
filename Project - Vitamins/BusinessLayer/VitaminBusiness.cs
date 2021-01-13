@@ -23,7 +23,7 @@ namespace BusinessLayer
         }
         public Vitamin GetRequiredVitamin(Symptom s)
         {
-            return this.GetRequiredVitamin(s);
+            return this.vitaminRepository.GetRequiredVitamin(s);
         }
     }
 }
