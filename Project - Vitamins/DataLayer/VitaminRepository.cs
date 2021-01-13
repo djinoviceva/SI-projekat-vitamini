@@ -36,20 +36,25 @@ namespace DataLayer
         public Vitamin GetRequiredVitamin(Symptom s)
         {
             SqlDataReader sqlDataReader = DBConnection.GetData("SELECT * FROM VITAMINS");
+            Vitamin vitamin = new Vitamin();
 
             while (sqlDataReader.Read())
             {
                 Vitamin v = new Vitamin();
                 v.VitaminID = sqlDataReader.GetInt32(0);
+                v.VitaminName = sqlDataReader.GetString(1);
+                v.Manufacturer = sqlDataReader.GetString(2);
+                v.Price = sqlDataReader.GetDecimal(3);
+                v.Amount = sqlDataReader.GetInt32(4);
 
                 if (v.VitaminID == s.VitaminID)
                 {
-                    return v;
+                    vitamin = v;
                 }
             }
 
             DBConnection.CloseConnection();
-            return null;
+            return vitamin;
         }
     }
 }

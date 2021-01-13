@@ -28,28 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelPharmacyHome = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.buttonRegister = new System.Windows.Forms.Button();
             this.buttonLogIn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelPharmacyHome
-            // 
-            this.labelPharmacyHome.AutoSize = true;
-            this.labelPharmacyHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPharmacyHome.Location = new System.Drawing.Point(251, 111);
-            this.labelPharmacyHome.Name = "labelPharmacyHome";
-            this.labelPharmacyHome.Size = new System.Drawing.Size(258, 36);
-            this.labelPharmacyHome.TabIndex = 0;
-            this.labelPharmacyHome.Text = "Apoteka vitamina";
-            this.labelPharmacyHome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonRegister
             // 
             this.buttonRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRegister.Location = new System.Drawing.Point(176, 214);
+            this.buttonRegister.Location = new System.Drawing.Point(260, 440);
+            this.buttonRegister.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(182, 53);
+            this.buttonRegister.Size = new System.Drawing.Size(228, 66);
             this.buttonRegister.TabIndex = 1;
             this.buttonRegister.Text = "Registracija";
             this.buttonRegister.UseVisualStyleBackColor = true;
@@ -58,35 +50,49 @@
             // buttonLogIn
             // 
             this.buttonLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogIn.Location = new System.Drawing.Point(393, 212);
+            this.buttonLogIn.Location = new System.Drawing.Point(516, 440);
+            this.buttonLogIn.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogIn.Name = "buttonLogIn";
-            this.buttonLogIn.Size = new System.Drawing.Size(178, 55);
+            this.buttonLogIn.Size = new System.Drawing.Size(222, 69);
             this.buttonLogIn.TabIndex = 2;
             this.buttonLogIn.Text = "Prijava";
             this.buttonLogIn.UseVisualStyleBackColor = true;
             this.buttonLogIn.Click += new System.EventHandler(this.buttonLogIn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1000, 562);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1000, 562);
             this.Controls.Add(this.buttonLogIn);
             this.Controls.Add(this.buttonRegister);
-            this.Controls.Add(this.labelPharmacyHome);
+            this.Controls.Add(this.pictureBox1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Home";
             this.Text = "Apoteka vitamina";
             this.Load += new System.EventHandler(this.Home_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelPharmacyHome;
         private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Button buttonLogIn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

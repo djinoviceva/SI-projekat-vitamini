@@ -41,7 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerBusiness.cs" />
+    <Compile Include="CustomerDetailBusiness.cs" />
+    <Compile Include="OrderBusiness.cs" />
+    <Compile Include="OrderItemBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SymptomBusiness.cs" />
+    <Compile Include="VitaminBusiness.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{15B507C2-D496-4020-8E60-6BBD621F60ED}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
