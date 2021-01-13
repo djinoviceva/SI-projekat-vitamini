@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Shared.Interfaces.Business;
+using Shared.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,19 +14,53 @@ namespace PresentationLayer
 {
     public partial class Register : Form
     {
-        public Register()
+        private readonly ICustomerBusiness customerBusiness;
+        public Register(ICustomerBusiness _customerBusines)
         {
+            this.customerBusiness = _customerBusines;
             InitializeComponent();
-        }
-
-        private void labelEMail_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Register_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonRegister_Click(object sender, EventArgs e)
+        {
+            Customer c = new Customer();
+            c.Name = textBoxName.Text;
+            c.Surname = textBoxSurname.Text;
+            c.Adress = textBoxAdress.Text;
+            c.City = textBoxCity.Text;
+            c.PhoneNumber = textBoxPhone.Text;
+            c.email = textBoxEMail.Text;
+            c.Password = textBoxPassword.Text;
+
+            if (customerBusiness.InsertCustomer(c) == true)
+            {
+                textBoxName.Text = "";
+                textBoxSurname.Text = "";
+                textBoxAdress.Text = "";
+                textBoxCity.Text = "";
+                textBoxPhone.Text = "";
+                textBoxEMail.Text = "";
+                textBoxPassword.Text = "";
+
+                Home newForm = new Home();
+                newForm.ShowDialog();
+            }
+            else
+            {
+                textBoxName.Text = "";
+                textBoxSurname.Text = "";
+                textBoxAdress.Text = "";
+                textBoxCity.Text = "";
+                textBoxPhone.Text = "";
+                textBoxEMail.Text = "";
+                textBoxPassword.Text = "";
+                MessageBox.Show("Registracija nije uspela! Pokusajte ponovo!");
+            }
         }
     }
 }

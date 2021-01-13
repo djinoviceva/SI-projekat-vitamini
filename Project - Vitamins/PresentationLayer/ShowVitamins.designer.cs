@@ -40,10 +40,11 @@
             // listBoxShowVitamins
             // 
             this.listBoxShowVitamins.FormattingEnabled = true;
-            this.listBoxShowVitamins.ItemHeight = 16;
-            this.listBoxShowVitamins.Location = new System.Drawing.Point(34, 66);
+            this.listBoxShowVitamins.ItemHeight = 20;
+            this.listBoxShowVitamins.Location = new System.Drawing.Point(42, 82);
+            this.listBoxShowVitamins.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxShowVitamins.Name = "listBoxShowVitamins";
-            this.listBoxShowVitamins.Size = new System.Drawing.Size(727, 292);
+            this.listBoxShowVitamins.Size = new System.Drawing.Size(908, 364);
             this.listBoxShowVitamins.TabIndex = 0;
             // 
             // menuShowVitamin
@@ -55,7 +56,8 @@
             this.LogOutToolStripMenuItem});
             this.menuShowVitamin.Location = new System.Drawing.Point(0, 0);
             this.menuShowVitamin.Name = "menuShowVitamin";
-            this.menuShowVitamin.Size = new System.Drawing.Size(800, 31);
+            this.menuShowVitamin.Padding = new System.Windows.Forms.Padding(10, 2, 0, 2);
+            this.menuShowVitamin.Size = new System.Drawing.Size(1000, 31);
             this.menuShowVitamin.TabIndex = 2;
             this.menuShowVitamin.Text = "menuUserHome";
             // 
@@ -78,7 +80,7 @@
             // LogOutToolStripMenuItem
             // 
             this.LogOutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogOutToolStripMenuItem.Margin = new System.Windows.Forms.Padding(450, 0, 0, 0);
+            this.LogOutToolStripMenuItem.Margin = new System.Windows.Forms.Padding(650, 0, 0, 0);
             this.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem";
             this.LogOutToolStripMenuItem.Size = new System.Drawing.Size(77, 27);
             this.LogOutToolStripMenuItem.Text = "Odjava";
@@ -87,21 +89,25 @@
             // buttonChooseSymptom
             // 
             this.buttonChooseSymptom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonChooseSymptom.Location = new System.Drawing.Point(288, 378);
+            this.buttonChooseSymptom.Location = new System.Drawing.Point(360, 472);
+            this.buttonChooseSymptom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonChooseSymptom.Name = "buttonChooseSymptom";
-            this.buttonChooseSymptom.Size = new System.Drawing.Size(212, 42);
+            this.buttonChooseSymptom.Size = new System.Drawing.Size(265, 52);
             this.buttonChooseSymptom.TabIndex = 3;
             this.buttonChooseSymptom.Text = "Izaberi svoje simptome";
             this.buttonChooseSymptom.UseVisualStyleBackColor = true;
+            this.buttonChooseSymptom.Click += new System.EventHandler(this.buttonChooseSymptom_Click);
             // 
             // ShowVitamins
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1000, 562);
             this.Controls.Add(this.buttonChooseSymptom);
             this.Controls.Add(this.menuShowVitamin);
             this.Controls.Add(this.listBoxShowVitamins);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ShowVitamins";
             this.Text = "Pregled vitamina";
             this.Load += new System.EventHandler(this.ShowVitamins_Load);

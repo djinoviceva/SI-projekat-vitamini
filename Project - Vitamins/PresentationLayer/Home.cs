@@ -1,4 +1,9 @@
-﻿using System;
+﻿using BusinessLayer;
+using DataLayer;
+using Microsoft.Extensions.DependencyInjection;
+using Shared.Interfaces.Business;
+using Shared.Interfaces.Repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,21 +22,44 @@ namespace PresentationLayer
             InitializeComponent();
         }
 
+        private void buttonRegister_Click(object sender, EventArgs e)
+        {
+            var services = new ServiceCollection();
+            ConfigureServices(services);
+
+            using (ServiceProvider serviceProvider = services.BuildServiceProvider())
+            {
+                var register = serviceProvider.GetRequiredService<Register>();
+                register.ShowDialog();
+            }
+        }
+
+        private void buttonLogIn_Click(object sender, EventArgs e)
+        {
+            var services = new ServiceCollection();
+            ConfigureServices(services);
+
+            using (ServiceProvider serviceProvider = services.BuildServiceProvider())
+            {
+                var login = serviceProvider.GetRequiredService<LogIn>();
+                login.ShowDialog();
+            }
+        }
+
         private void Home_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void buttonRegister_Click(object sender, EventArgs e)
+        private static void ConfigureServices(ServiceCollection services)
         {
-            Register newForm = new Register();
-            newForm.ShowDialog();
-        }
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<ICustomerBusiness, CustomerBusiness>();
+            services.AddScoped<Register>();
 
-        private void buttonLogIn_Click(object sender, EventArgs e)
-        {
-            LogIn newForm = new LogIn();
-            newForm.ShowDialog();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<ICustomerBusiness, CustomerBusiness>();
+            services.AddScoped<LogIn>();
         }
     }
 }
