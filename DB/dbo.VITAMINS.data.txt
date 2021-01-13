@@ -1,0 +1,9 @@
+﻿SET IDENTITY_INSERT [dbo].[VITAMINS] ON
+INSERT INTO [dbo].[VITAMINS] ([VitaminID], [VitaminName], [Manufacturer], [Price], [Amount]) VALUES (1, 'Vitamin B', 'Galenika', CAST(220.00 AS Decimal(18, 2)), 1)
+INSERT INTO [dbo].[VITAMINS] ([VitaminID], [VitaminName], [Manufacturer], [Price], [Amount]) VALUES (2, 'Magnezijum', 'Galenika', CAST(315.00 AS Decimal(18, 2)), 1)
+INSERT INTO [dbo].[VITAMINS] ([VitaminID], [VitaminName], [Manufacturer], [Price], [Amount]) VALUES (3, 'Kalcijum', 'Galenika', CAST(365.00 AS Decimal(18, 2)), 1)
+INSERT INTO [dbo].[VITAMINS] ([VitaminID], [VitaminName], [Manufacturer], [Price], [Amount]) VALUES (4, 'Vitamin C', 'Hemofarm', CAST(269.00 AS Decimal(18, 2)), 1)
+INSERT INTO [dbo].[VITAMINS] ([VitaminID], [VitaminName], [Manufacturer], [Price], [Amount]) VALUES (5, 'Koenzim Q10', 'Hemofarm', CAST(599.00 AS Decimal(18, 2)), 1)
+INSERT INTO [dbo].[VITAMINS] ([VitaminID], [VitaminName], [Manufacturer], [Price], [Amount]) VALUES (6, 'Gvozdje', 'Galenika', CAST(639.00 AS Decimal(18, 2)), 1)
+INSERT INTO [dbo].[VITAMINS] ([VitaminID], [VitaminName], [Manufacturer], [Price], [Amount]) VALUES (7, 'Vitamin A', 'Hemofarm', CAST(489.00 AS Decimal(18, 2)), 1)
+SET IDENTITY_INSERT [dbo].[VITAMINS] OFF
