@@ -62,6 +62,8 @@ namespace PresentationLayer
 
         private void buttonSuggestVitamin_Click(object sender, EventArgs e)
         {
+            listBoxSuggestedVitamin.Items.Clear();
+
             List<RadioButton> buttons = new List<RadioButton>();
 
             buttons.Add(radioButtonS1);
@@ -81,14 +83,14 @@ namespace PresentationLayer
 
                     s = symptomBusiness.FindSymptom(description);
 
-                    /*CustomerDetail detail = new CustomerDetail();
+                    CustomerDetail detail = new CustomerDetail();
                     detail.CustomerID = LogIn.c.CustomerID;
                     detail.SymptomID = s.SymptomID;
 
                     if (customerDetailBusiness.InsertCustomerDetail(detail) == true)
                     {
                         MessageBox.Show("Na osnovu unetih simptoma, vitamin je predlozen! Mozete ga poruciti klikom na dugme 'Poruci'!");
-                    }*/
+                    }
 
                     Vitamin v = new Vitamin();
                     v = vitaminBusiness.GetRequiredVitamin(s);
@@ -97,25 +99,28 @@ namespace PresentationLayer
                     listBoxSuggestedVitamin.Items.Add(v.VitaminID + ". " + v.VitaminName + " (" + v.Manufacturer + ") - " +
                     v.Price);
                 }
-                /*else
-                {
-                    MessageBox.Show("Niste izabrali simptom. Potrebno je da izaberete jedan simptom!");
-                }*/
             }
         }
 
         private void buttonOrder_Click(object sender, EventArgs e)
         {
-
-            Quantity = Convert.ToInt32(textBoxQuantity.Text);
-            var services = new ServiceCollection();
-            ConfigureServices(services);
-
-            using (ServiceProvider serviceProvider = services.BuildServiceProvider())
+            if (!string.IsNullOrEmpty(textBoxQuantity.Text))
             {
-                var orderConfirmation = serviceProvider.GetRequiredService<OrderConfirmation>();
-                orderConfirmation.ShowDialog();
+                Quantity = Convert.ToInt32(textBoxQuantity.Text);
+                var services = new ServiceCollection();
+                ConfigureServices(services);
+
+                using (ServiceProvider serviceProvider = services.BuildServiceProvider())
+                {
+                    var orderConfirmation = serviceProvider.GetRequiredService<OrderConfirmation>();
+                    orderConfirmation.ShowDialog();
+                }
             }
+            else
+            {
+                MessageBox.Show("Morate uneti kolicinu proizvoda!");
+            }
+                
         }
 
         private static void ConfigureServices(ServiceCollection services)

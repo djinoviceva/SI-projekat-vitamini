@@ -50,7 +50,8 @@
             // 
             this.textBoxEMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEMail.Location = new System.Drawing.Point(430, 148);
-            this.textBoxEMail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEMail.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEMail.MaxLength = 30;
             this.textBoxEMail.Name = "textBoxEMail";
             this.textBoxEMail.Size = new System.Drawing.Size(242, 27);
             this.textBoxEMail.TabIndex = 1;
@@ -70,8 +71,10 @@
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(430, 204);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPassword.MaxLength = 15;
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(242, 27);
             this.textBoxPassword.TabIndex = 3;
             // 
@@ -79,7 +82,7 @@
             // 
             this.buttonLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogIn.Location = new System.Drawing.Point(408, 291);
-            this.buttonLogIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLogIn.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogIn.Name = "buttonLogIn";
             this.buttonLogIn.Size = new System.Drawing.Size(206, 65);
             this.buttonLogIn.TabIndex = 4;
@@ -98,7 +101,7 @@
             this.Controls.Add(this.textBoxEMail);
             this.Controls.Add(this.labelEMail);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LogIn";
             this.Text = "Prijava";
             this.Load += new System.EventHandler(this.LogIn_Load);

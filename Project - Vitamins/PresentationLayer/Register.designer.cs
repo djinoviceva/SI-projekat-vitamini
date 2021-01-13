@@ -125,7 +125,8 @@
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(418, 66);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxName.MaxLength = 20;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(226, 27);
             this.textBoxName.TabIndex = 7;
@@ -133,7 +134,8 @@
             // textBoxSurname
             // 
             this.textBoxSurname.Location = new System.Drawing.Point(418, 106);
-            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSurname.MaxLength = 30;
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(226, 27);
             this.textBoxSurname.TabIndex = 8;
@@ -141,7 +143,8 @@
             // textBoxAdress
             // 
             this.textBoxAdress.Location = new System.Drawing.Point(418, 146);
-            this.textBoxAdress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAdress.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAdress.MaxLength = 50;
             this.textBoxAdress.Name = "textBoxAdress";
             this.textBoxAdress.Size = new System.Drawing.Size(226, 27);
             this.textBoxAdress.TabIndex = 9;
@@ -149,7 +152,8 @@
             // textBoxCity
             // 
             this.textBoxCity.Location = new System.Drawing.Point(418, 185);
-            this.textBoxCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxCity.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCity.MaxLength = 20;
             this.textBoxCity.Name = "textBoxCity";
             this.textBoxCity.Size = new System.Drawing.Size(226, 27);
             this.textBoxCity.TabIndex = 10;
@@ -157,7 +161,8 @@
             // textBoxPhone
             // 
             this.textBoxPhone.Location = new System.Drawing.Point(416, 222);
-            this.textBoxPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPhone.MaxLength = 20;
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(228, 27);
             this.textBoxPhone.TabIndex = 11;
@@ -165,7 +170,8 @@
             // textBoxEMail
             // 
             this.textBoxEMail.Location = new System.Drawing.Point(418, 261);
-            this.textBoxEMail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEMail.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEMail.MaxLength = 30;
             this.textBoxEMail.Name = "textBoxEMail";
             this.textBoxEMail.Size = new System.Drawing.Size(226, 27);
             this.textBoxEMail.TabIndex = 12;
@@ -173,8 +179,10 @@
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(418, 301);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPassword.MaxLength = 15;
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(226, 27);
             this.textBoxPassword.TabIndex = 13;
             // 
@@ -182,7 +190,7 @@
             // 
             this.buttonRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRegister.Location = new System.Drawing.Point(364, 369);
-            this.buttonRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonRegister.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(248, 58);
             this.buttonRegister.TabIndex = 14;
@@ -211,7 +219,7 @@
             this.Controls.Add(this.labelSurname);
             this.Controls.Add(this.labelName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Register";
             this.Text = "Registracija";
             this.Load += new System.EventHandler(this.Register_Load);

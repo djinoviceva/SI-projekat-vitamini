@@ -92,7 +92,7 @@
             this.radioButtonS1.AutoSize = true;
             this.radioButtonS1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonS1.Location = new System.Drawing.Point(41, 110);
-            this.radioButtonS1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonS1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonS1.Name = "radioButtonS1";
             this.radioButtonS1.Size = new System.Drawing.Size(183, 22);
             this.radioButtonS1.TabIndex = 2;
@@ -105,7 +105,7 @@
             this.radioButtonS2.AutoSize = true;
             this.radioButtonS2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonS2.Location = new System.Drawing.Point(41, 144);
-            this.radioButtonS2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonS2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonS2.Name = "radioButtonS2";
             this.radioButtonS2.Size = new System.Drawing.Size(223, 22);
             this.radioButtonS2.TabIndex = 3;
@@ -118,7 +118,7 @@
             this.radioButtonS3.AutoSize = true;
             this.radioButtonS3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonS3.Location = new System.Drawing.Point(41, 178);
-            this.radioButtonS3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonS3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonS3.Name = "radioButtonS3";
             this.radioButtonS3.Size = new System.Drawing.Size(120, 22);
             this.radioButtonS3.TabIndex = 4;
@@ -131,7 +131,7 @@
             this.radioButtonS4.AutoSize = true;
             this.radioButtonS4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonS4.Location = new System.Drawing.Point(41, 211);
-            this.radioButtonS4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonS4.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonS4.Name = "radioButtonS4";
             this.radioButtonS4.Size = new System.Drawing.Size(201, 22);
             this.radioButtonS4.TabIndex = 5;
@@ -144,7 +144,7 @@
             this.radioButtonS5.AutoSize = true;
             this.radioButtonS5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonS5.Location = new System.Drawing.Point(41, 245);
-            this.radioButtonS5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonS5.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonS5.Name = "radioButtonS5";
             this.radioButtonS5.Size = new System.Drawing.Size(170, 22);
             this.radioButtonS5.TabIndex = 6;
@@ -157,7 +157,7 @@
             this.radioButtonS6.AutoSize = true;
             this.radioButtonS6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonS6.Location = new System.Drawing.Point(41, 279);
-            this.radioButtonS6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonS6.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonS6.Name = "radioButtonS6";
             this.radioButtonS6.Size = new System.Drawing.Size(136, 22);
             this.radioButtonS6.TabIndex = 7;
@@ -170,7 +170,7 @@
             this.radioButtonS7.AutoSize = true;
             this.radioButtonS7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonS7.Location = new System.Drawing.Point(41, 312);
-            this.radioButtonS7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonS7.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonS7.Name = "radioButtonS7";
             this.radioButtonS7.Size = new System.Drawing.Size(112, 22);
             this.radioButtonS7.TabIndex = 8;
@@ -182,7 +182,7 @@
             // 
             this.buttonSuggestVitamin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSuggestVitamin.Location = new System.Drawing.Point(63, 375);
-            this.buttonSuggestVitamin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSuggestVitamin.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSuggestVitamin.Name = "buttonSuggestVitamin";
             this.buttonSuggestVitamin.Size = new System.Drawing.Size(218, 59);
             this.buttonSuggestVitamin.TabIndex = 9;
@@ -206,7 +206,7 @@
             this.listBoxSuggestedVitamin.FormattingEnabled = true;
             this.listBoxSuggestedVitamin.ItemHeight = 20;
             this.listBoxSuggestedVitamin.Location = new System.Drawing.Point(549, 78);
-            this.listBoxSuggestedVitamin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxSuggestedVitamin.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxSuggestedVitamin.Name = "listBoxSuggestedVitamin";
             this.listBoxSuggestedVitamin.Size = new System.Drawing.Size(375, 144);
             this.listBoxSuggestedVitamin.TabIndex = 11;
@@ -215,7 +215,7 @@
             // 
             this.buttonOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOrder.Location = new System.Drawing.Point(620, 300);
-            this.buttonOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonOrder.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOrder.Name = "buttonOrder";
             this.buttonOrder.Size = new System.Drawing.Size(229, 54);
             this.buttonOrder.TabIndex = 12;
@@ -237,7 +237,8 @@
             // textBoxQuantity
             // 
             this.textBoxQuantity.Location = new System.Drawing.Point(758, 249);
-            this.textBoxQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxQuantity.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxQuantity.MaxLength = 2;
             this.textBoxQuantity.Name = "textBoxQuantity";
             this.textBoxQuantity.Size = new System.Drawing.Size(90, 27);
             this.textBoxQuantity.TabIndex = 14;
@@ -262,7 +263,7 @@
             this.Controls.Add(this.radioButtonS1);
             this.Controls.Add(this.menuChooseSymptom);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ChooseSymptom";
             this.Text = "ChooseSymptom";
             this.Load += new System.EventHandler(this.ChooseSymptom_Load);
